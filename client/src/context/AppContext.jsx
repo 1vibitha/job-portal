@@ -25,6 +25,7 @@ export const AppContextProvider = (props) => {
 
    }
 
+
    useEffect(()=>
     {
         
@@ -32,11 +33,15 @@ export const AppContextProvider = (props) => {
 
     },[])
 
+
+
     const value = {
         searchFilter,setSearchFilter,
         isSearched,setIsSearched,
         jobs,setJobs,
     }
+
+    
 
     return (
         <AppContext.Provider value={value} >
